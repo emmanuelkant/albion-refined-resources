@@ -30,7 +30,7 @@ const calc = () => {
   }
 
   const result = calcAmount(Math.round(resources / amountToProduceOne), returnRate);
-  document.querySelector('#result').value = Math.round(result);
+  document.querySelector('#result').innerHTML = Math.round(result);
 }
 
 const calcAmount = (resources, returnRate) => {

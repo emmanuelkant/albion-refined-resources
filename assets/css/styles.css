@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0px solid black;
+}
+
+*:focus {
+  outline: none;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #eee;
+}
+
+#main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#total {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}

@@ -1,15 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Albion Profit Refining</title>
-  <script src="albionRefining.js"></script>
+  <title>Albion Online - Refining Return Resources</title>
+  <meta charset="utf-8">
+  <meta name="description" content="A site for let you know how many resources you will refine in Albion Online">
+  <meta name="author" content="Emmanuel Kant Duarte">
+  <meta name="keywords" content="albion, Albion Online, Game, MMORPG, Sandbox, Sandbox Interactive">
+
+  <meta property="og:title" content="Albion Online - Refining Return Resources" />
+  <meta property="og:type" content="" />
+  <meta property="og:url" content="" />
+  <meta property="og:image" content="" />
+
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/albionRefining.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 </head>
 <body>
-  <input id="amountResources" type="number" placeholder="Amount" onkeyup="debounce(calc, 100)()">
-  <input id="returnRate" type="number" placeholder="Return Rate. e.g. 36.5%" value="0" onkeyup="debounce(calc, 100)()">
-  <input id="amountToProduceOne" type="number" placeholder="Amount to produce one refined resource" value="1" onkeyup="debounce(calc, 100)()">
-  <input type="text" disabled id="result">
+  <main id="main">
+    <div id="total">
+      <h2>Total of Resources: ~<span id="result">1555</span></h2>
+    </div>
+    <div class="row">
+      <form class="col s12">
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="amountResources" type="number" onkeyup="debounce(calc, 100)()">
+            <label for="amountResources">Amount of Resources</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="returnRate" type="number" onkeyup="debounce(calc, 100)()">
+            <label for="returnRate">Return Rate</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="amountToProduceOne" type="number" onkeyup="debounce(calc, 100)()">
+            <label for="amountToProduceOne">Amount to Produce One</label>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
 </body>
 </html>
