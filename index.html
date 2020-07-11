@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Albion Profit Refining</title>
+  <script src="albionRefining.js"></script>
+</head>
+<body>
+  <input id="amountResources" type="number" placeholder="Amount" onkeyup="debounce(calc, 100)()">
+  <input id="returnRate" type="number" placeholder="Return Rate. e.g. 36.5%" value="0" onkeyup="debounce(calc, 100)()">
+  <input id="amountToProduceOne" type="number" placeholder="Amount to produce one refined resource" value="1" onkeyup="debounce(calc, 100)()">
+  <input type="text" disabled id="result">
+</body>
+</html>
